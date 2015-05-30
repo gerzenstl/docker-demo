@@ -1,0 +1,104 @@
+/* 
+    Document   : style
+    Created on : Sep 26, 2013, 2:55:50 AM
+    Author     : luis
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+  display: block;
+}
+
+.slide h1,
+.slide p {
+  color: #333;
+}
+
+#slides-author {
+  font-size: 25px;
+  color: #253237;
+}
+
+.slide.cover-slides {
+  background: #f7f6f1 url(../img/small_v-trans.png) no-repeat center;
+  background-size: 520px;
+  background-position: center 40px;
+}
+
+.cover-slides {
+  margin-top: 420px;
+}
+
+.slide h1.center,
+.slide q.center,
+.slide p.center {
+  text-align: center;  
+}
+
+.slide .slide-title {
+  font-size: 50px;
+  color: #253237;
+  margin: 0 0 50px 0;
+}
+
+.slide ul li.dot {
+  list-style: initial;
+  margin: 10px 0;
+}
+
+.slide ul li ul li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.slide-img.vagrant-diagram {
+  height: 685px;
+}
+
+.slide-img.vagrant-workflow {
+  margin-top: 120px;
+}
+
+.slide-img.matrix-container {
+  margin: 0;
+  width: 750px;
+}
+.slide-img.vagrant-workflow.animation-gif {
+  margin: 120px auto 0;
+  display: block;
+  height: 200px;
+}
+
+.step.slide.wide-diagram {
+  padding: 0 64px;
+}
+
+.slide-subtitle {
+  font-size: 35px;
+  margin: 0 0 10px 0;
+}
+
+.sorry {
+  font-size: 40px;
+}
+
+.slide .comparation-os {
+  margin-top: 210px;
+}
+
+.slide .comparation-os td {
+  text-align: center;
+  width: 250px;
+  vertical-align: middle;
+}
+
+.slide .company-logo {
+  background: transparent url(../img/42mate-logo.png) no-repeat center;
+}
+
+q.autor-line {
+  margin-top: 50px;
+  line-height: 45px;
+  text-align: center;
+}
