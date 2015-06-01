@@ -64,4 +64,5 @@ RUN chown -Rf nginx.nginx /var/www
 
 EXPOSE 80
 
-CMD ["/bin/bash"]
+CMD ["/usr/sbin/nginx","-c","/etc/nginx/nginx.conf"]
+CMD ["php5-fpm","-c","/etc/php5/fpm"]

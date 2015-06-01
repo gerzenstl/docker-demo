@@ -34,7 +34,7 @@
       <div class="step slide" data-y="1000">
         <div class="slide-title">Antes de comenzar, unas preguntas ...</div>
         <q><p><p></q>
-        <q><p>No sean timidos al responder.<p></q>
+        <q><p>No sean tímidos al responder.<p></q>
       </div>
       
       <div class="step slide" data-y="2000">
@@ -45,23 +45,22 @@
       <div class="step slide" data-y="3000">
         <div class="slide-title">En la actualidad:</div>
         <ul>
-          <li class="dot"><p>Las aplicaciones acutales son mas complejas.</p></li>
-          <li class="dot"><p>Replicarlo a nivel local es muy bueno.</p></li>
-          <li class="dot"><p>Podemos usar VMs, pero puede llegar a ser costoso.</p></li>
-          <li class="dot"><p>Tambien podria ser bueno usarlo en CI.</p></li>
-          <li class="dot"><p>Una alternativa a las VMs, puede ser algo llamado Containers.</p></li>
+          <li class="dot"><p>Las aplicaciones actuales son mas complejas.</p></li>
+          <li class="dot"><p>Es muy bueno poder replicar el mismo stack de la aplicación en todos los entornos.</p></li>
+          <li class="dot"><p>Podemos usar VMs, pero puede llegar a ser costoso en recursos.</p></li>
+          <li class="dot"><p>Una alternativa a las VMs, puede ser un Containers.</p></li>
         </ul>
       </div>
       
       <div class="step slide" data-x="1500">
         <div class="slide-title">Docker</div>
-        <q><p>“Herramienta que facilita crear containers ligeros, portables y autosuficientes
-            para cualquier aplicacion.”<p></q>
+        <q><p>“Herramienta que facilita crear Linux containers que son ligeros, portables y autosuficientes
+            para cualquier aplicación.”<p></q>
       </div>
       
       <div class="step slide" data-x="1500" data-y="1000">
-        <div class="slide-title">LXC?</div>
-        <q><p>“Tecnologia de virtualizacion disponible en Linux que permite ejecutar a su vez multiples instacias de Sist. Op. aislados.”<p></q>
+        <div class="slide-title">Linux containers (LXC)?</div>
+        <q><p>“Tecnología de virtualización disponible en Linux que permite ejecutar a su vez multiples instacias de Sist. Op. aislados.”<p></q>
       </div>
       
       <div class="step slide" data-x="1500" data-y="2000">
@@ -70,7 +69,7 @@
       </div>
       
       <div class="step slide" data-x="1500" data-y="3000">
-        <div class="slide-title">Container como solucion</div>
+        <div class="slide-title">Container como solución</div>
         <img class="slide-img matrix-container" src="img/eliminates-matrix-from-hell.png" alt="Container" title="Container">
       </div>
       
@@ -79,19 +78,24 @@
         <ul>
           <li class="dot"><p>Espacio reservado para procesos.</p></li>
           <li class="dot"><p>Propia interfaz de red.</p></li>
-          <li class="dot"><p>Puede ejecutar porcesos como <b>root</b>.</p></li>
+          <li class="dot"><p>Puede ejecutar procesos como <b>root</b>.</p></li>
           <li class="dot"><p>Tiene su propio /sbin/init</p></li>
         </ul>
+      </div>
+      
+      <div class="step slide" data-x="1500" data-y="5000">
+        <div class="slide-title">Linux containers = Mindblown</div>
+        <img class="slide-img mindblown" src="img/mind-blown.gif" alt="Container" title="Container">
       </div>
       
       <div class="step slide" data-x="3000">
         <div class="slide-title">Docker</div>
         <ul>
-          <li class="dot"><p>Aplicacion cliente-servidor.</p></li>
+          <li class="dot"><p>Aplicación cliente-servidor.</p></li>
           <li class="dot"><p>Open source (2013).</p></li>
           <li class="dot"><p>Utiliza Linux Containers (LXC).</p></li>
           <li class="dot"><p>Mucho mas livianos que una VM.</p></li>
-          <li class="dot"><p>Se esta tornando muy popular.</p></li>
+          <li class="dot"><p>En el ultimo año, se torno muy popular.</p></li>
           <li class="dot"><p>Buena documentación.</p></li>
           <li class="dot"><p>Soporte de la comunidad.</p></li>
           <li class="dot"><p>Pensado para Linux, pero se puede* usar en otros Sist. Op.</p></li>
@@ -108,8 +112,8 @@
           </tr>
           <tr>
             <td>Si</td>
-            <td>Si, pero no nativo</td>
-            <td><img class="slide-img" src="img/yao-small.jpg" alt="Guindows" title="Guindows"></td>
+            <td>No nativo, usa boot2docker</td>
+            <td><img class="slide-img" src="img/yao-small.jpg" alt="Guindows" title="Guindows"><p>No nativo, usa boot2docker</p></td>
           </tr>
         </table>
       </div>
@@ -141,7 +145,7 @@
         <div class="slide-title">Partes de Docker (cliente-servidor)</div>
         <p class="slide-subtitle">Docker deamon</p>
         <ul>
-          <li class="dot"><p>Recibe y procesa requests a traves de su API.</p></li>
+          <li class="dot"><p>Recibe y procesa requets a traves de su API.</p></li>
         </ul>
         <p class="slide-subtitle">Docker client</p>
         <ul>
@@ -158,9 +162,9 @@
       
       <div class="step slide" data-x="6000">
         <div class="slide-title">Docker</div>
-        <p class="slide-subtitle">Instalacion:</p>
+        <p class="slide-subtitle">Instalación:</p>
         <ul>
-          <li class="dot"><p>Atencion: checkear pre-requisitos segun que Sist. Op. y version tengan.</p></li>
+          <li class="dot"><p>Atención: checkear pre-requisitos según que Sist. Op. y version tengan.</p></li>
           <li class="dot"><p>Para Ubuntu requiere que sea x64 bits y kernel +3.10</p></li>
           <li class="dot"><p>Windows o OSX? <b>boot2docker</b>: VM ligera (~24MB) donde puede correr Docker.</p></li>
           <li class="dot"><p>En Ubuntu:</p></li>
@@ -207,7 +211,7 @@
         <ul>    
           <li class="dot"><p>Soporte nativo solo para Linux.</p></li>            
           <li class="dot"><p>Potencialmente menos seguras que una VM.</p></li>            
-          <li class="dot"><p>Hay resistencia en usarlo en entornos Produccion.</p></li>
+          <li class="dot"><p>Hay resistencia en usarlo en entornos Producción.</p></li>
         </ul>    
       </div>
       
@@ -226,77 +230,17 @@
         <p class="slide-subtitle">Podes probarlo online!</p>
         <p class="slide-subtitle">https://www.docker.com/tryit/</p>
       </div>
-
- <!--     <div class="step slide wide-diagram" data-x="13500">
-        <img class="slide-img vagrant-diagram" src="img/vagrant-diagram.jpg" alt="Vagrant diagram" title="Vagrant diagram">
-      </div>
-
-      <div class="step slide" data-x="15000">
-        <div class="slide-title">Vagrant</div>
-        <p class="slide-subtitle">Instalación:</p>
-        <ul>
-          <li class="dot"><p>Instalar un software de virtualización (recomendable: VirtualBox).</p></li>
-          <li class="dot">
-            <p>Instalar Vagrant. Instalador disponible en : <a href="http://downloads.vagrantup.com" target="_blank">downloads.vagrantup.com</a></p><br/>
-              <ul>
-                <li><p>En Windows: instalan el archivo vagrant_1.7.2.msi</p></li><br/>
-                <li><p>En Debian/Ubuntu: <br>sudo dpkg -i vagrant_1.7.2_x86_64.deb</p></li><br/>
-              </ul>
-          </li>
-        </ul>
-      </div>
       
-      <div class="step slide" data-x="15000" data-y="1000">
-        <div class="slide-title">Una breve demostración</div>
-        
+      <div class="step slide" data-x="10500" data-y="1000">
+        <div class="slide-title">Docker</div>
+        <img class="slide-img matrix-container" src="img/ops-problem.jpg" alt="Container" title="Container">
       </div>
 
-      <div class="step slide" data-x="16500">
-        <div class="slide-title">Vagrant</div>
-        <p class="slide-subtitle">Comandos mas usados:</p>
-        <ul>
-          <li class="dot"><p><b>vagrant init</b>: inicializa un entorno Vagrant.</p></li>
-          <li class="dot"><p><b>vagrant up</b>: la 1° vez crea la VM, la inicializa y la configura (en base al Vagrantfile). El resto de las veces solo hace las últimas 2 cosas.</p></li>
-          <li class="dot"><p><b>vagrant provision:</b> (en caso de haber uno) ejecuta y configura el provisioner en la VM correspondiente.</p></li>
-          <li class="dot"><p><b>vagrant halt:</b> apaga la VM</p></li>
-          <li class="dot"><p><b>vagrant reload:</b> lo mismo a hacer vagrant halt + vagrant up</p></li>
-          <li class="dot"><p><b>vagrant ssh:</b> hace un ssh a la correspondiente VM.</p></li>
-        </ul>
-      </div>
-
-      <div class="step slide" data-x="18000">
-        <div class="slide-title">Vagrant</div>
-        <p class="slide-subtitle">Workflow de comandos:</p>
-        <ul>
-          <li class="dot"><p><b>vagrant init</b>: solo se lo ejecuta una sola vez.</p></li>
-          <li class="dot"><p><b>vagrant up</b>: inicializa la VM</p></li>
-          <li class="dot"><p><b>vagrant provision</b>: en caso de tener alguno, se lo usa cuando hubo cambios en el mismo.</p></li>
-          <li class="dot"><p><b>vagrant ssh</b>: en caso de necesitar, se accede a la VM.</p></li>
-          <li class="dot"><p>...</p></li>
-          <li class="dot"><p>Desarrollo o prueba a realizar.</p></li>
-          <li class="dot"><p>...</p></li>        
-          <li class="dot"><p><b>vagrant halt</b>: apagamos la VM.</p></li>
-        </ul>
-      </div>
-
-      <div class="step slide" data-x="19500">
-        <div class="slide-title">Vagrant</div>
-        <p class="slide-subtitle">Mas info:</p>
-        <ul>
-          <li class="dot"><p><a href="http://www.vagrantup.com" target="_blank">http://www.vagrantup.com</a> - Website de Vagrant</p></li>
-          <li class="dot"><p><a href="http://www.vagrantbox.es" target="_blank">http://www.vagrantbox.es</a> - Lista de boxes.</p></li>
-          <li class="dot"><p><a href="https://puphpet.com" target="_blank">https://puphpet.com</a> - Wizard configurador de Vagrant con Puppet para PHP.</p></li>
-          <li class="dot"><p><a href="http://mywiki.wooledge.org/BashGuide" target="_blank">http://mywiki.wooledge.org/BashGuide</a> Guia online de Bash scripting.</p></li>
-          <li class="dot"><p><a href="http://docs.puppetlabs.com" target="_blank">http://docs.puppetlabs.com/</a> - Documentación oficial de Puppet.</p></li>
-          <li class="dot"><p><a href="http://example42.com" target="_blank">http://example42.com</a> - Ejemplos, tutoriales de Puppet (mas orientado para Ruby).</p></li>
-        </ul>
-      </div> -->
-      
-      <div class="step slide" data-x="21000">
+      <div class="step slide" data-x="11500">
         <q class="single-msje-slide"><p class="center">Preguntas?</p></q>
       </div>
       
-      <div class="step slide" data-x="22500">
+      <div class="step slide" data-x="13000">
         <q class="single-msje-slide"><p class="center">Gracias!</p></q>
       </div>
     </div>

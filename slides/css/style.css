@@ -44,7 +44,7 @@ root {
 
 .slide ul li.dot {
   list-style: initial;
-  margin: 10px 0;
+  margin: 10px 0 10px 40px;
 }
 
 .slide ul li ul li {
@@ -68,6 +68,13 @@ root {
   margin: 120px auto 0;
   display: block;
   height: 200px;
+}
+
+.slide-img.mindblown {
+  margin: 180px auto;
+  width: 350px;
+  display: block;
+
 }
 
 .step.slide.wide-diagram {
@@ -102,3 +109,4 @@ q.autor-line {
   line-height: 45px;
   text-align: center;
 }
+
